@@ -69,11 +69,10 @@ this is a demo imitate the Baidu login dialog
 		var moveH = 0;
 		if(isDraging===true){
 			moveX = mouseX - mouseOffsetX;
-			moveHY= mouseY - mouseOffsetY;
+			moveY= mouseY - mouseOffsetY;
 			
 			g('dialog').style.left = moveX + 'px';
 			g('dialog').style.top = moveY + 'px';
-			
 		}
 	}
 	//鼠标事件3
