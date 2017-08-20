@@ -17,6 +17,7 @@ body{
 	left: 100px;
 	border: 1px solid #d5d5d5;
 	background: #FFFFFF;
+	display: none;
 }
 .ui-dialog-title{
 	height: 48px;
