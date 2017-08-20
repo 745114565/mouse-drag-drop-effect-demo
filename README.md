@@ -81,7 +81,8 @@ this is a demo imitate the Baidu login dialog
 	}
 	
 ```
-* 优化 _不让浮层移动到可视区域外_
+* 优化 
+1. _不让浮层移动到可视区域外_
 ``` javascript
 			//范围限定 
 			//	moveX > 0  并且 moveX < (页面最大宽度 - 浮层宽度)
@@ -103,4 +104,12 @@ this is a demo imitate the Baidu login dialog
 			moveY = Math.min(maxY,Math.max(0,moveY));
 			
 ```
-* 使用外部js文件**windown.onload**中定义的方法  [资料1](http://www.jb51.net/article/43166.htm "资料1") [资料2](http://blog.csdn.net/c_p_h/article/details/63684510 "资料2")
+2. _浏览器窗口变化后，让浮层依然居中_
+``` javascript
+	//窗口变化后登陆浮层居中
+	window.onresize(){
+		autoCenter(g('dialog'));
+		fillToBody(g('mask'));
+	}
+```
+* 使用外部js文件**windown.onload**中定义的方法  [资料1](http://www.jb51.net/article/43166.htm "资料1") [资料2](http://blog.csdn.net/c_p_h/article/details/63684510 "资料2")
