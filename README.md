@@ -14,7 +14,7 @@ this is a demo imitate the Baidu login dialog
 ```
 * js编写
 ``` javascript
-  //获取元素对象
+  	//获取元素对象
 	function g(id){return document.getElementById(id);}
 	
 	//自动居中 - 登录浮层
@@ -33,7 +33,7 @@ this is a demo imitate the Baidu login dialog
 		 
 	}
   
-  //自动全屏 - 遮罩
+  	//自动全屏 - 遮罩
 	function fillToBody(el){
 		el.style.width = document.documentElement.clientWidth + 'px';
 		el.style.height = document.documentElement.clientHeight + 'px';
@@ -48,7 +48,7 @@ this is a demo imitate the Baidu login dialog
 
 > 鼠标松开的时候，元素可拖动状态标记为不可拖动状态
 ``` javascript
-  var mouseOffsetX = 0;
+ 	var mouseOffsetX = 0;
 	var mouseOffsetY = 0;
 	var isDraging = false;
 	
@@ -66,7 +66,7 @@ this is a demo imitate the Baidu login dialog
 		var mouseY = e.pageY;
 		
 		var moveX = 0;
-		var moveH = 0;
+		var moveY = 0;
 		if(isDraging===true){
 			moveX = mouseX - mouseOffsetX;
 			moveY= mouseY - mouseOffsetY;
