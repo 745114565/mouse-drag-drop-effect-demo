@@ -107,9 +107,9 @@ this is a demo imitate the Baidu login dialog
 2. _浏览器窗口变化后，让浮层依然居中_
 ``` javascript
 	//窗口变化后登陆浮层居中
-	window.onresize(){
-		autoCenter(g('dialog'));
-		fillToBody(g('mask'));
+	window.onresize = function(){
+	autoCenter(g('dialog'));
+	fillToBody(g('mask'));
 	}
 ```
 * 使用外部js文件**windown.onload**中定义的方法  [资料1](http://www.jb51.net/article/43166.htm "资料1") [资料2](http://blog.csdn.net/c_p_h/article/details/63684510 "资料2")
